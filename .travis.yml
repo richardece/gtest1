@@ -1,8 +1,15 @@
 dist: bionic
 language: cpp
+sudo: require
 
 compiler:
   -gcc
+
+before_install:
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get install -qq cppcheck
 
 before_script:
   - mkdir build
@@ -13,5 +20,9 @@ script:
   - make
 
 after_success:
+#Run code
+  - ./main/gtestExample1_run 
+#Cpp check
+  - cppcheck --quiet --error-exitcode=1 .
 #Run google test
   - ./test/gtestExample1_tst 
