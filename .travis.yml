@@ -23,6 +23,6 @@ after_success:
 #Run code
   - ./main/gtestExample1_run 
 #Cpp check
-  - cppcheck --quiet --error-exitcode=1 .
+  - cppcheck --quiet --force --error-exitcode=1 .
 #Run google test
   - ./test/gtestExample1_tst 
