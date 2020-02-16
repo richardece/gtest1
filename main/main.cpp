@@ -6,6 +6,6 @@ int main() {
 
     //For testing cpp check
     int a[3] = { 0, 1, 2 };
-    a[3] = 4;
+    std::cout << "print outside range "<<a[3]<<std::endl;
     return 0;
 }
