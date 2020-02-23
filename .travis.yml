@@ -10,6 +10,7 @@ before_install:
 
 install:
   - sudo apt-get install -qq cppcheck
+  - sudo apt-get install -qq gcov lcov gcovr
 
 before_script:
   - mkdir build
@@ -26,3 +27,5 @@ after_success:
   - cppcheck --quiet --force --error-exitcode=1 .
 #Run google test
   - ./test/gtestExample1_tst 
+#Run code coverage
+  - sh ../code_cov.sh

@@ -14,5 +14,16 @@ add_test(
 
 target_link_libraries(${BINARY} PUBLIC 
     gtest_main
-    ${CMAKE_PROJECT_NAME}_lib gtest
+    ${CMAKE_PROJECT_NAME}_lib   
+    gtest
 )
+
+if (ENABLE_COVERAGE)
+    target_compile_options(${BINARY} PRIVATE
+                            --coverage 
+                            -O0
+    )
+    target_link_options(${BINARY} PRIVATE
+                            --coverage 
+    )
+endif()
