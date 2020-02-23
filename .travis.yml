@@ -10,7 +10,7 @@ before_install:
 
 install:
   - sudo apt-get install -qq cppcheck
-  - sudo apt-get install -qq gcov lcov gcovr
+  - sudo apt-get install -qq lcov gcovr
 
 before_script:
   - mkdir build
