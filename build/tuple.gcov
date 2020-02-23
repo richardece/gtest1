@@ -1,6 +1,6 @@
         -:    0:Source:/usr/include/c++/7/tuple
-        -:    0:Graph:./build/test/CMakeFiles/gtestExample1_tst.dir/formula-test.cpp.gcno
-        -:    0:Data:./build/test/CMakeFiles/gtestExample1_tst.dir/formula-test.cpp.gcda
+        -:    0:Graph:./test/CMakeFiles/gtestExample1_tst.dir/formula-test.cpp.gcno
+        -:    0:Data:./test/CMakeFiles/gtestExample1_tst.dir/formula-test.cpp.gcda
         -:    0:Runs:1
         -:    0:Programs:1
         -:    1:// <tuple> -*- C++ -*-
