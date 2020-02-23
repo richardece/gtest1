@@ -44,4 +44,4 @@ after_success:
 #Run google test
   - ./test/gtestExample1_tst 
 #Run code coverage
-  - sh ../code_cov.sh
+  - bash ../code_cov.sh
